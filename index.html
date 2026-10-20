@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+
+<div class="calculator">
+    <div class="top-row">
+        <div class="screen">
+            <input type="text" id="inputBox" placeholder="INPUT">
+            <div id="outputBox">Output</div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow up" onclick="upArrow()">&uarr;</button>
+            <button class="arrow down" onclick="downArrow()">&darr;</button>
+            <button class="arrow left" onclick="leftArrow()">&larr;</button>
+            <button class="arrow right" onclick="rightArrow()">&rarr;</button>
+        </div>
+    </div>
+
+    <div class="keypad">
+        <button onclick="addChar('1')">1</button>
+        <button onclick="addChar('2')">2</button>
+        <button onclick="addChar('3')">3</button>
+        <button onclick="addChar('+')">+</button>
+        <button onclick="addChar('(')">(</button>
+
+        <button onclick="addChar('4')">4</button>
+        <button onclick="addChar('5')">5</button>
+        <button onclick="addChar('6')">6</button>
+        <button onclick="addChar('-')">-</button>
+        <button onclick="addChar(')')">)</button>
+
+        <button onclick="addChar('7')">7</button>
+        <button onclick="addChar('8')">8</button>
+        <button onclick="addChar('9')">9</button>
+        <button onclick="addChar('*')">*</button>
+        <button onclick="addChar('%')">%</button>
+
+        <button onclick="addChar('^')">^</button>
+        <button onclick="addChar('0')">0</button>
+        <button onclick="addChar('.')">.</button>
+        <button onclick="addChar('÷')">÷</button>
+        <button class="enter" onclick="calculate()">🏹 ENTER 🏹</button>
+    </div>
+</div>
+
+</body>
+<script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
+</html>
